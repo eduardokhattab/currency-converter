@@ -1,5 +1,4 @@
 class ConverterFactory
-
 	def initialize(options={})
 		@to   = options[:to]
 		@from =	options[:from]
@@ -25,3 +24,58 @@ end
 # 		to: "brazil"
 # 	}
 
+## Send on BRL
+# {
+# 	conversion_results: [
+# 		{
+# 			base_country: "mexico",
+# 			exchange_rates: [
+# 					{
+# 						original: {
+# 							value: 200,
+# 							currency: "MXN"
+# 						},
+# 						converted: {
+# 							value: 300,
+# 							currency: "BRL"
+# 						}
+# 					},
+# 					{
+# 						original: {
+# 							value: 300,
+# 							currency: "MXN"
+# 						},
+# 						converted: {
+# 							value: 400,
+# 							currency: "BRL"
+# 						}
+# 					}
+# 			]
+# 		},
+# 		{
+# 			base_country: "usa",
+# 			exchange_rates: [
+# 					{
+# 						original: {
+# 							value: 200,
+# 							currency: "usd"
+# 						},
+# 						converted: {
+# 							value: 300,
+# 							currency: "BRL"
+# 						}
+# 					},
+# 					{
+# 						original: {
+# 							value: 300,
+# 							currency: "usd"
+# 						},
+# 						converted: {
+# 							value: 400,
+# 							currency: "BRL"
+# 						}
+# 					}
+# 			]
+# 		}
+# 	]
+# }

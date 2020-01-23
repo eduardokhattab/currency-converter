@@ -14,19 +14,19 @@ Currency.create(
 Currency.create(
 	code: "USD",
 	name: "US Dollar",
-	current_brl_exchange_rate: 1.0
+	current_brl_exchange_rate: 0.2397898515
 )
 
 Currency.create(
 	code: "EUR",
 	name: "Euro",
-	current_brl_exchange_rate: 1.0
+	current_brl_exchange_rate: 0.2162021923
 )
 
 Currency.create(
 	code: "MXN",
 	name: "Mexican Peso",
-	current_brl_exchange_rate: 1.0
+	current_brl_exchange_rate: 4.4867792359
 )
 
 Country.create title: "Brazil", currency_id: Currency.find_by_code("BRL").id

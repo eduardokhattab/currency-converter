@@ -1,5 +1,3 @@
-# require "#{Rails.root}/app/models/factories/converter_factory.rb"
-
 class ConverterApiController < ApplicationController
   before_action :set_converter
 

@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_01_23_175110) do
   create_table "currencies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "code"
     t.string "name"
-    t.decimal "current_brl_exchange_rate", precision: 10
+    t.decimal "current_brl_exchange_rate", precision: 12, scale: 2, default: "0.0"
     t.datetime "updated_at", null: false
     t.datetime "created_at", null: false
   end
