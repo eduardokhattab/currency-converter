@@ -1,2 +1,2 @@
 # currency-converter
-Currency converter application based on currencylayer API
+Currency converter application based on Exchange Rates API
