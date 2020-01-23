@@ -13,19 +13,19 @@
 ActiveRecord::Schema.define(version: 2020_01_23_175110) do
 
   create_table "countries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "currency_id"
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["currency_id"], name: "index_countries_on_currency_id"
   end
 
   create_table "currencies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "country_id"
     t.string "code"
     t.string "name"
     t.decimal "current_brl_exchange_rate", precision: 10
     t.datetime "updated_at", null: false
     t.datetime "created_at", null: false
-    t.index ["country_id"], name: "index_currencies_on_country_id"
   end
 
 end
