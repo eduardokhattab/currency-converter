@@ -1,11 +1,11 @@
 <body style="background:#f5f4fa">
     <div class="header">
       <div class="title">
-        <h1>Company Name</h1>
+        <h1>Gympass</h1>
       </div>
     </div>
     <div class="cards">
-      <a href="<%= simulations_company_plan_path(:basic) %>" id="card-basic" class="card basic">
+      <a href="<%= simulations_company_plan_path(:basic, value: 19.9, plan_name: :basic) %>" id="card-basic" class="card basic">
            <div class="overlay"></div>
         <div class="circle">
           <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
@@ -13,7 +13,7 @@
         <p>Basic Plan</p>
       </a>
 
-      <a href="<%= simulations_company_plan_path(:silver) %>" id="card-silver" class="card silver">
+      <a href="<%= simulations_company_plan_path(:silver, value: 49.9, plan_name: :silver) %>" id="card-silver" class="card silver">
            <div class="overlay"></div>
         <div class="circle">
           <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
@@ -21,7 +21,7 @@
         <p>Silver Plan</p>
       </a>
 
-      <a href="<%= simulations_company_plan_path(:gold) %>" id="card-gold" class="card gold">
+      <a href="<%= simulations_company_plan_path(:gold, value: 159.9, plan_name: :gold) %>" id="card-gold" class="card gold">
            <div class="overlay"></div>
         <div class="circle">
           <i class="fa fa-hand-o-right" aria-hidden="true"></i>
@@ -29,12 +29,12 @@
         <p>Gold Plan</p>
       </a>
 
-      <a href="<%= simulations_company_plan_path(:premium) %>" id="card-premium" class="card premium">
+      <a href="<%= simulations_company_plan_path(:premium, value: 359.9, plan_name: :platinum) %>" id="card-premium" class="card premium">
            <div class="overlay"></div>
         <div class="circle">
           <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
         </div>
-        <p>Premium Plan</p>
+        <p>Platinum Plan</p>
       </a>
     </div>
   </body>
